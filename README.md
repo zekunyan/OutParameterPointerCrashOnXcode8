@@ -37,3 +37,7 @@ Build on Release configuration.
 On Xcode 8, it will crash.
 
 On Xcode 7, it works normal.
+
+Use Hopper disassembler to check:
+
+![img](https://github.com/zekunyan/OutParameterPointerCrashOnXcode8/blob/master/Resource/hopper_disassembler.jpg)
