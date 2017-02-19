@@ -1,13 +1,16 @@
-## Example code for out parameter pointer EXC_BAD_ACCESS crash on Xcode 8
+//
+//  main.m
+//  CommonOCTest
+//
+//  Created by zorro on 16/5/2.
+//  Copyright © 2016年 tutuge. All rights reserved.
+//
 
-Code: 
-
-```
-// main.m
 #import <Foundation/Foundation.h>
 #import <CoreFoundation/CoreFoundation.h>
 
 @interface TestClass : NSObject
+
 @end
 
 @implementation TestClass
@@ -28,12 +31,8 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         [TestClass runTest];
     }
+    
     return 0;
 }
-```
 
-Build on Release configuration.
 
-On Xcode 8, it will crash.
-
-On Xcode 7, it works normal.
